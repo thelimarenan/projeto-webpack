@@ -18,5 +18,5 @@ const config = {
     body
 };
 
-fetch('http://localhost:3000/negociacoes', config)
+fetch(`${ENV_URL}/negociacoes`, config)
     .then(() => console.log('Dado enviado com sucesso'));
